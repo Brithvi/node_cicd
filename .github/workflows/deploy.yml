@@ -27,7 +27,7 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build image
-      run: docker build -t ecs-devops-app .
+      run: docker build -t ecs-devops-app ./app
 
     - name: Push image
       run: |
